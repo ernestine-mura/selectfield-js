@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dependent Drop-down List</title>
+  <link rel="stylesheet" href="linked-field.css">
+</head>
+<body>
+  <div class="container">
+    <div class="titre">
+      <h2>Listes deroulantes dépendantes javascript</h2>
+
+    </div>
+    <div class="form-linked">
+      <h3>Vueillez choisir votre departement</h3>
+      <select id="region" onchange="yourChoice()">
+        <option value="centre">Centre</option>
+        <option value="littoral">Littoral</option>
+        <option value="adamaoua">Adamaoua</option>
+        <option value="nord">Nord</option>
+        <option value="nord_ouest">Nord-ouest</option>
+        <option value="est">Est</option>
+        <option value="sud">Sud</option>
+        <option value="sud_ouest">Sud-ouest</option>
+        <option value="ouest">Ouest</option>
+        <option value="extreme_nord">Extreme-nord</option>
+      </select>
+
+      <select id="dep">
+
+      </select>
+
+    </div>
+  </div>
+<script src="linked-field.js"></script>
+</body>
+</html>
