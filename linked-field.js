@@ -50,21 +50,30 @@ function yourChoice() {
   const region = document.getElementById("region");
   const dep = document.getElementById("dep");
   const selectRegion = region.value;
-
 // on vide 
 dep.innerHTML = "";
-
 departements[selectRegion].forEach((departement) => {
   
   const option = document.createElement("option");
   option.value = departement;
   option.textContent = departement;
   dep.appendChild(option);
-  
-});
 
+});
 }
 yourChoice();
+
+function yourResult(){
+  const region = document.getElementById("region");
+  const dep = document.getElementById("dep");
+  var result = document.getElementById("result");
+
+  const selecRegion = region.value;
+  const selectDep = dep.value;
+
+  result.textContent = "Vous êtes bien évidemment de la région de : " + selecRegion + " principalement du département du : " + selectDep;
+}
+
 
 // //tableaux d'objects
 

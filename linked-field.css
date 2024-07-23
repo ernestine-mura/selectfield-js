@@ -7,32 +7,83 @@
   padding: 25px;
 }
 .form-linked {
-  background-color: #401313;
+  background-color: rgb(15, 89, 89);
   max-width: 600px;
-  height: auto;
+  height: 400px;
   margin: auto;
-  padding: 25px 15px;
+  padding: 10px 15px;
 }
 h2 {
   color: brown;
-  font-size: 28px;
+  font-size: 24px;
 }
 .titre {
   background-color: #bdbdbd;
-  box-shadow: 5px #000;
   max-width: 600px;
-  border-radius: 8px;
-  padding: 25px 15px;
+  border-radius: 8px 8px 0 0;
+  padding: 10px 15px;
   margin: auto;
 }
 h3 {
   color: #fff;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 option {
   text-transform: capitalize;
 }
+select {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+  max-width: 230px;
+  padding: 12px 5px;
+  box-shadow: 8px 8px rgb(63, 16, 16);
+  cursor: pointer;
+  width: 100%;
+  margin: 15px;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance:none ;
+  overflow: hidden;
+}
+.slect {
+  display: inline-block;
+  column-gap: 45px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+select option {
+  background-color: rgba(5, 37, 27, 0.4);
+  color: rgb(63, 16, 16);
+  font-size: 16px;
+}
+.form-linked p {
+  color: #bdbdbd;
+  font-size: 18px;
+  padding-top: 45px;
+}
+label {
+  position: relative;
+  cursor: pointer;
+}
+label:before {
+  content: "";
+}
+label:after {
+  height: 0;
+  width: 0;
+  content: " ";
+  position: absolute;
+  top: 9px;
+  right: 22px;
+  pointer-events: none;
+  border-color: rgb(63, 16, 16);
+  border: solid transparent;
+  border-width: 5px;
+  z-index: 100;
+  border-top-color: rgb(63, 16, 16);
+  margin-top: -2px;
 
-select #region {
-  max-height: 145px;
 }
